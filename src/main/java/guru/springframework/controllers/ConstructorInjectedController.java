@@ -12,6 +12,8 @@ public class ConstructorInjectedController {
 
     private GreetingService greetingService;
 
+    // As of Springframework 4.2 there's automatic wiring of constructor based DI, so the annotation isn't required here
+    // still, it may be a good practice to add t anyway to explicitly let your intentions be known
     @Autowired
     public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
