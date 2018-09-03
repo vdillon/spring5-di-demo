@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
  * Created by jt on 5/24/17.
  */
 @Service
-@Profile("es")
 @Primary
-public class PrimarySpanishGreetingService implements GreetingService {
+@Profile("es")
+public class PrimarySpanishGreetingServiceImpl implements GreetingService {
 
     @Override
     public String sayGreeting() {
