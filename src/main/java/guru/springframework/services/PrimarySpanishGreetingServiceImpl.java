@@ -14,6 +14,6 @@ public class PrimarySpanishGreetingServiceImpl implements GreetingService {
 
     @Override
     public String sayGreeting() {
-        return "Servicio de Saludo Primario";
+        return "Saludos desde el Servicio Primario";
     }
 }
