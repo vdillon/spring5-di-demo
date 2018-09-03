@@ -11,6 +11,7 @@ public class MyController {
 
     private GreetingService greetingService;
 
+    // Uses @Primary bean
     public MyController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
