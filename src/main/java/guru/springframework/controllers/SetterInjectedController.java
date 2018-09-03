@@ -16,8 +16,10 @@ public class SetterInjectedController {
         return greetingService.sayGreeting();
     }
 
+    // Qualifier on setter can be on method or parameter
     @Autowired
-    public void setGreetingService(@Qualifier("setterGreetingService") GreetingService greetingService) {
+    @Qualifier("setterGreetingService")
+    public void setGreetingService(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 }
