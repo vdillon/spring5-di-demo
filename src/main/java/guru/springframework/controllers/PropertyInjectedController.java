@@ -14,7 +14,7 @@ public class PropertyInjectedController {
 
     @Autowired
     @Qualifier("greetingServiceImpl")
-    // If qualifier removed, Primary will be used, even if the property name is the same as a bean!
+    // If qualifier removed, @Primary bean will be used, even if the property name is the same as an existing bean!
     public GreetingService greetingServiceImpl;
 
     public String sayHello(){
