@@ -15,6 +15,7 @@ public class PropertyInjectedController {
     @Autowired
     //@Qualifier("greetingServiceImpl")
     // Can use qualifier or give property same name as desired bean and Spring uses reflection to find it
+    // Note: if a @Primary bean is defined, it will be used, even if the property name is the same as a bean
     public GreetingService greetingServiceImpl;
 
     public String sayHello(){
