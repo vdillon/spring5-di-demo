@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Primary
 @Profile({"en", "default"})
-public class PrimaryGreetingService implements GreetingService {
+public class PrimaryGreetingServiceImpl implements GreetingService {
 
     private GreetingRepository greetingRepository;
 

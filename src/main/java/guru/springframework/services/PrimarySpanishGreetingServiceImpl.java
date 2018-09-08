@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
  * Created by jt on 5/24/17.
  */
 @Service
+@Profile("es")
 @Primary
-@Profile("de")
-public class PrimaryGermanGreetingService implements GreetingService {
+public class PrimarySpanishGreetingServiceImpl implements GreetingService {
 
     private GreetingRepository greetingRepository;
 
     @Override
     public String sayGreeting() {
-        return greetingRepository.getGermanGreeting();
+        return greetingRepository.getSpanishGreeting();
     }
 }
