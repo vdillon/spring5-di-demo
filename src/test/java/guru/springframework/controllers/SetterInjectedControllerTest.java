@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by jt on 5/24/17.
  */
-public class GetterInjectedControllerTest {
+public class SetterInjectedControllerTest {
 
     private GetterInjectedController getterInjectedController;
 
